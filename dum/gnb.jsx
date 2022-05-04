@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Routes, Route, Link, useNavigate } from 'react-router-dom'
-import Login from './login'
+import Login from '../src/components/login'
 
 function Gnb() {
     let navigate = useNavigate();

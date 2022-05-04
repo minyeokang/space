@@ -1,0 +1,109 @@
+.mainslide {
+    display: block;
+    position: relative;
+
+}
+
+.mainslide .slide_img {
+    width: 100%;
+}
+
+.mainslide .slide_txt {
+    position: absolute;
+    right: 20%;
+    top: 50%;
+    color: #fff;
+    transform: translate(0, -50%);
+    text-align: right;
+}
+
+.mainslide .slide_txt h2 {
+    font-size: 4.0rem;
+    letter-spacing: 5px;
+    padding-bottom: 40px;
+
+}
+
+.mainslide .slide_txt p {
+    font-size: 4.0rem;
+    font-family: 'Noto Serif KR';
+    font-weight: 600;
+}
+
+.mainslide .slide_txt dl {
+
+    font-family: 'Noto Serif KR';
+    padding-bottom: 40px;
+}
+
+.mainslide .slide_txt dt {
+    font-size: 4.6rem;
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+
+.mainslide .slide_txt dd {
+    font-size: 2.0rem;
+}
+
+.mainslide .slide_img img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.intro {
+    max-width: calc(100% - 33.33%);
+    margin: 0 auto;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 2.2rem;
+    border-bottom: 2px solid #646464;
+}
+
+.names p {
+    padding-bottom: 10px;
+}
+
+.names span {
+    font-family: 'noto serif kr';
+}
+
+.bio {
+    text-align: right;
+    font-family: 'noto serif kr';
+
+}
+
+.bio span {
+    font-weight: 700;
+}
+
+.qna {
+    max-width: calc(100% - 33.33%);
+    margin: 150px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.qna h2 {
+    font-size: 3.0rem;
+    color: #054400;
+    padding-bottom: 20px;
+    letter-spacing: 5px;
+}
+
+.qna p {
+    font-family: 'noto serif kr';
+    font-size: 2.0rem;
+}
+
+.qna p.bt {
+    padding-bottom: 50px;
+}
+
+.an {
+    text-align: right;
+}

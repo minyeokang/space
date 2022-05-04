@@ -1,0 +1,114 @@
+.more {
+    font-size: 2.0rem;
+    border-bottom: 2px solid #000;
+    display: inline-block;
+    padding: 5px 70px 5px 0;
+    background: url('../../icon_plus.svg') no-repeat center right;
+    filter: brightness(0%);
+    cursor: pointer;
+}
+
+.mainslide {
+    max-width: calc(100% - 33.333%);
+    margin: 100px auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainslide .slide_txt h2 {
+    font-size: 4.0rem;
+    letter-spacing: 5px;
+}
+
+.mainslide .slide_txt p {
+    font-size: 2.2rem;
+    font-family: 'Noto Serif KR';
+    padding-bottom: 40px;
+}
+
+.mainslide .slide_txt dl {
+    font-size: 2.2rem;
+    font-family: 'Noto Serif KR';
+    padding-bottom: 40px;
+}
+
+.mainslide .slide_img img {
+    width: 100%;
+    cursor: pointer;
+}
+
+@media(max-width: 1820px) {
+    .mainslide {
+        max-width: calc(100% - 20.83%);
+    }
+}
+
+@media(max-width: 1400px) {
+    .mainslide {
+        max-width: calc(100% - 10.416%);
+    }
+}
+
+@media(max-width: 1200px) {
+    .mainslide .slide_img {
+        width: 70%;
+    }
+}
+
+@media(max-width: 998px) {
+    .mainslide {
+        display: block;
+        position: relative;
+    }
+
+    .mainslide .slide_img {
+        width: 100%;
+    }
+
+    .mainslide .slide_txt {
+        position: absolute;
+        right: 70px;
+        top: 50%;
+        color: #fff;
+        transform: translateY(-50%);
+    }
+
+    .mainslide .slide_txt div.more {
+        filter: brightness(100%);
+        border-bottom: 2px solid #fff;
+    }
+}
+
+@media(max-width: 786px) {
+    .mainslide .slide_txt h2 {
+        font-size: 3.0rem;
+    }
+
+    .mainslide .slide_txt p {
+        font-size: 1.6rem;
+        padding-bottom: 20px;
+    }
+
+    .mainslide .slide_txt dl {
+        font-size: 1.6rem;
+        padding-bottom: 20px;
+    }
+
+}
+
+@media(max-width: 600px) {
+    .mainslide .slide_txt {
+        right: 30px;
+    }
+
+    .mainslide .slide_txt h2 {
+        font-size: 2.0rem;
+    }
+
+    .mainslide .slide_txt dl {
+        font-size: 1.5rem;
+        padding-bottom: 10px;
+    }
+}

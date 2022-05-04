@@ -1,6 +1,6 @@
 import './App.css';
 import { Routes, Route, Link, useNavigate } from 'react-router-dom'
-import Main from './components/main'
+import Main from './components/main/main'
 import Footer from './components/footer'
 import Project from './components/project'
 import News from './components/news'
@@ -11,11 +11,15 @@ import React, { useState } from "react";
 function App() {
   let navigate = useNavigate();
   let [isClicked, setisClicked] = useState(false);
+  let [hamClicked, setHamClicked] = useState(false);
   return (
     <div className="App">
       <header>
         <ul className="gnb">
-          <li className="ham"><img src="img/icon_ham.png" alt="ham" /></li>
+          <li className="ham" onClick={() => {
+            setHamClicked(true)
+          }}><img src="img/icon_ham.png" alt="ham" />
+          </li>
           <li onClick={() => {
             navigate("/project");
           }}>PROJECT</li>
@@ -33,18 +37,33 @@ function App() {
           }}>MYPAGE </li>
 
         </ul>
-        <div className='ham'></div>
+
         <div className='login_ico' onClick={() => { setisClicked(!isClicked) }}><img src="img/icon_login.png" alt="login" /></div>
+        {
+          hamClicked == true ?
+            <div className='mgnb_wrap'>
+              <ul className="mgnb">
+                <li className='logo_mgnb' onClick={() => {
+                  navigate("/");
+                }}>SPACE</li>
+                <li onClick={() => {
+                  navigate("/project");
+                }}>PROJECT</li>
+                <li onClick={() => {
+                  navigate("/news");
+                }}>NEWS</li>
 
-        <div className="mgnb_wrap">
-          <ul className="mgnb">
-            <li>PROJECT</li>
-            <li>NEWS</li>
-            <li>STORE</li>
-            <li>MYPAGE</li>
-          </ul>
-        </div>
-
+                <li onClick={() => {
+                  navigate("/store");
+                }}>STORE</li>
+                <li onClick={() => {
+                  navigate("/mypage");
+                }}>MYPAGE </li>
+                <li className='close_mgnb' onClick={() => { setHamClicked(false) }}> <i>Close</i> </li>
+              </ul>
+            </div>
+            : null
+        }
       </header>
       {
         isClicked == true ? <div className='login'>
