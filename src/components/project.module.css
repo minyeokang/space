@@ -1,7 +1,7 @@
 .mainslide {
     display: block;
     position: relative;
-
+    z-index: -1;
 }
 
 .mainslide .slide_img {
@@ -15,12 +15,13 @@
     color: #fff;
     transform: translate(0, -50%);
     text-align: right;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
 }
 
 .mainslide .slide_txt h2 {
     font-size: 4.0rem;
-    letter-spacing: 5px;
     padding-bottom: 40px;
+    font-weight: normal;
 
 }
 
@@ -92,7 +93,7 @@
     font-size: 3.0rem;
     color: #054400;
     padding-bottom: 20px;
-    letter-spacing: 5px;
+    font-weight: normal;
 }
 
 .qna p {

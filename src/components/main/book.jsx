@@ -10,7 +10,7 @@ function Book() {
                     <div>
                         <dl>
                             <dt>BOOK No.503</dt>
-                            <dd>사라진 건물과<br />식제된 시간의 재구성</dd>
+                            <dd>사라진 건물과<br />삭제된 시간의 재구성</dd>
                         </dl>
                         <div className={styles.more} onClick={() => {
                             navigate("/store")

@@ -8,7 +8,7 @@ function Article() {
                 <li>
                     <div>
                         <img src="img/ariticle_1.png" alt="이미지1" />
-                        <button className={styles.selected}>★</button>
+
                     </div>
                     <dl>
                         <dt>	&#91; 인터뷰 &#93; 집의 근본, 집의 변주
@@ -21,28 +21,26 @@ function Article() {
                 </li>
                 <li>
                     <div>
-                        <img src="img/ariticle_1.png" alt="이미지1" />
-                        <button >★</button>
+                        <img src="img/ariticle_2.png" alt="이미지1" />
+
                     </div>
                     <dl>
-                        <dt>	&#91; 인터뷰 &#93; 집의 근본, 집의 변주
-
+                        <dt>&#91; 에디토리얼 &#93; 끝나지 않은 대화
                         </dt>
-                        <dd>건축 입문자들의 가이드 </dd>
+                        <dd>브랜드가 일상이 되는 경험 </dd>
 
                     </dl>
                     <p>VIEW</p>
                 </li>
                 <li>
                     <div>
-                        <img src="img/ariticle_1.png" alt="이미지1" />
-                        <button>★</button>
+                        <img src="img/ariticle_3.png" alt="이미지1" />
+
                     </div>
                     <dl>
-                        <dt>	&#91; 인터뷰 &#93; 집의 근본, 집의 변주
-
+                        <dt>&#91; 동남아시아 건축가와의 대화 &#93;
                         </dt>
-                        <dd>건축 입문자들의 가이드 </dd>
+                        <dd>독일 건축가의 발리 건축뷰 </dd>
 
                     </dl>
                     <p>VIEW</p>

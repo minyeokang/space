@@ -3,7 +3,7 @@
     border-bottom: 2px solid #000;
     display: inline-block;
     padding: 5px 70px 5px 0;
-    background: url('../../icon_plus.svg') no-repeat center right;
+    background: url('../../../public/img/icon/icon_plus.svg') no-repeat center right;
     filter: brightness(0%);
     cursor: pointer;
 }
@@ -18,11 +18,11 @@
 .article h2 {
     transform: rotate(-90deg);
     font-size: 3.5rem;
-    letter-spacing: 2px;
     display: inline;
     position: absolute;
     left: -100px;
     top: 200px;
+    font-weight: normal;
 }
 
 .article ul {
@@ -47,27 +47,10 @@
     position: relative;
 }
 
-.article ul li div button {
-    position: absolute;
-    right: 35px;
-    top: 0;
-    background: url('../../icon_bookmark.png') no-repeat;
-    color: #fff;
-    border: 0;
-    width: 30px;
-    height: 50px;
-    font-size: 2.5rem;
-    padding-bottom: 20px;
-    cursor: pointer;
-}
-
-.article ul li div button.selected {
-    color: #F57900;
-}
 
 .article ul li dl {
     padding: 30px 30px 0;
-    font-size: 2.2rem;
+    font-size: 2.0rem;
     font-family: 'Noto Serif KR';
 }
 

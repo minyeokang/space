@@ -3,7 +3,7 @@
     border-bottom: 2px solid #000;
     display: inline-block;
     padding: 5px 70px 5px 0;
-    background: url('../../icon_plus.svg') no-repeat center right;
+    background: url('../../../public/img/icon/icon_plus.svg') no-repeat center right;
     filter: brightness(0%);
     cursor: pointer;
 }
@@ -26,9 +26,9 @@
 
 .newbook h2 {
     font-size: 4.0rem;
-    letter-spacing: 5px;
     color: #1D8813;
     padding-bottom: 50px;
+    font-weight: normal;
 }
 
 .newbook dl {

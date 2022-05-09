@@ -3,7 +3,7 @@
     border-bottom: 2px solid #000;
     display: inline-block;
     padding: 5px 70px 5px 0;
-    background: url('../../icon_plus.svg') no-repeat center right;
+    background: url('../../../public/img/icon/icon_plus.svg') no-repeat center right;
     filter: brightness(0%);
     cursor: pointer;
 }
@@ -19,7 +19,7 @@
 
 .mainslide .slide_txt h2 {
     font-size: 4.0rem;
-    letter-spacing: 5px;
+    font-weight: normal;
 }
 
 .mainslide .slide_txt p {

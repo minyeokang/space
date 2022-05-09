@@ -1,0 +1,88 @@
+.store {
+
+    max-width: calc(100% - 33.333%);
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #053900;
+    font-weight: normal;
+    padding: 100px 0;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.txt {
+    margin-right: 20%;
+}
+
+.txt p {
+    color: #1D8813;
+    font-size: 4.0rem;
+    padding-bottom: 25px;
+
+}
+
+.table dt {
+    font-size: 3.0rem;
+}
+
+.table dd {
+    font-size: 2.2rem;
+    font-family: 'Noto Serif KR';
+    padding-bottom: 30px;
+}
+
+.table table {
+    border-collapse: collapse;
+    text-align: left;
+    font-family: 'Noto Serif KR';
+    font-size: 2.0rem;
+    border-top: 2px solid #393939;
+    width: 100%;
+}
+
+.table table th {
+    border-bottom: 1px solid #8E8E8E;
+    padding: 10px 0;
+}
+
+.table table td {
+    border-bottom: 1px solid #8E8E8E;
+    padding: 10px 0;
+}
+
+
+
+.bookflex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.bookflex div {
+    margin: 50px 0;
+}
+
+.bookflex img {
+    background: #F1F1F1;
+    width: 100%;
+}
+
+.bookflex p {
+    font-size: 2.5rem;
+    padding: 25px 25px 0;
+}
+
+.bookflex p span {
+    float: right;
+    font-size: 2.2rem;
+    color: #555555;
+    font-family: 'Noto Serif KR';
+}

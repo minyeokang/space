@@ -42,7 +42,7 @@ textarea {
 
 body {
   font-size: 1.6rem;
-  font-family: 'DM Serif Display', serif;
+  font-family: 'DM Serif Text', serif;
   color: #333;
   line-height: 1.5;
 }
@@ -59,7 +59,7 @@ body {
   border-bottom: 2px solid #000;
   display: inline-block;
   padding: 5px 70px 5px 0;
-  background: url('icon_plus.svg') no-repeat center right;
+  background: url('../public/img/icon/icon_plus.svg') no-repeat center right;
   filter: brightness(0%);
   cursor: pointer;
 }
@@ -83,6 +83,7 @@ header .gnb {
 header .gnb li {
   font-size: 1.8rem;
   cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
 }
 
 .login_ico {
@@ -94,6 +95,7 @@ header .gnb li {
 
 header .gnb li.logo {
   font-size: 3.0rem;
+  font-family: 'DM Serif Text', serif;
 }
 
 .ham {
@@ -139,10 +141,11 @@ header .gnb li.logo {
 
 .login {
   position: absolute;
-  top: 170px;
+  top: 120px;
   background: #EAE6E5;
   width: 100%;
   height: 200px;
+  border-top: 1px solid #9F9F9F;
 }
 
 .login .box {
@@ -150,24 +153,27 @@ header .gnb li.logo {
   margin: 0 auto;
   display: flex;
   justify-content: flex-end;
+  padding-top: 35px;
 }
 
-.login .under600 {
-  display: none;
-}
+
 
 .login .box form input {
   display: block;
 }
 
+.login dl {
+  border-right: 5px solid #C2C2C2;
+}
+
 .login_txt {
   text-align: right;
   font-size: 4.0rem;
-  border-right: 5px solid #C2C2C2;
-  padding: 0 50px 30px 0;
+  padding: 10px 50px 0 0;
+
 }
 
-.login_txt span {
+dd.login_txt {
   font-size: 3.0rem;
 }
 
@@ -183,7 +189,7 @@ header .gnb li.logo {
   border: 0;
   background: rgba(245, 121, 0, 0.62);
   color: #fff;
-  font-family: 'dm serif display';
+  font-family: 'DM Serif Text', serif;
   font-size: 2.0rem;
   letter-spacing: 1px;
   margin-left: 30px;
@@ -195,18 +201,18 @@ header .gnb li.logo {
   font-size: 2.0rem;
   width: 200px;
   font-family: 'dm serif display';
-  background: transparent url('icon_id.png') no-repeat left center;
+  background: transparent url('../public/img/icon/icon_id.png') no-repeat left center;
   border-bottom: 1px solid #979797;
-  padding: 0 0 0 20px;
+  padding: 0 0 5px 20px;
 }
 
 .login .pw {
   font-size: 2.0rem;
   width: 200px;
   font-family: 'dm serif display';
-  background: transparent url('icon_pw.png') no-repeat left center;
+  background: transparent url('../public/img/icon/icon_pw.png') no-repeat left center;
   border-bottom: 1px solid #979797;
-  padding: 0 0 0 20px;
+  padding: 0 0 5px 20px;
   margin-top: 20px;
 }
 
@@ -223,6 +229,12 @@ footer {
   background: #333;
   color: #Fff;
   padding: 100px 0;
+  margin-top: 100px;
+}
+
+footer h3 {
+  font-weight: normal;
+  font-size: 3.0rem;
 }
 
 footer .inner {
@@ -244,10 +256,33 @@ footer .inner {
 
 footer .changefont {
   font-family: 'noto serif kr';
+  font-size: 1.8rem;
+  font-weight: 300;
 }
 
 address {
   padding: 5px 0;
+  font-weight: 400;
+}
+
+.btn {
+  font-family: 'Noto Serif KR';
+  font-size: 1.8rem;
+  margin-top: 50px;
+  display: inline-block;
+  padding: 15px 50px 15px 70px;
+  text-align: center;
+  border: 1px solid #2D2D2D;
+  cursor: pointer;
+}
+
+.btn:nth-of-type(1) {
+  margin-right: 30px;
+  background: url('../public/img/icon/bag.png')no-repeat 40px center;
+}
+
+.btn:nth-of-type(2) {
+  background: url('../public/img/icon/cart.png')no-repeat 40px center;
 }
 
 @media(max-width: 1600px) {
@@ -265,6 +300,7 @@ address {
 @media(max-width: 1200px) {
   header .gnb {
     max-width: calc(100% - 10.416%);
+    padding: 10px 0;
   }
 
   .gnb li:not(.logo, .ham) {
@@ -277,17 +313,28 @@ address {
     transform: translateX(-50%);
   }
 
-  .login {
-    top: 150px;
-  }
 
   .ham {
     display: block;
   }
 
+  .login {
+    height: 250px;
+    top: 150px;
+    border-top: 0;
+  }
+
   .login_ico {
     right: 50px;
-    top: 38px;
+    top: 45px;
+  }
+
+  .login button {
+    width: 60px;
+    height: 60px;
+    font-size: 1.6rem;
+    margin-top: 20px;
+
   }
 }
 
@@ -295,6 +342,7 @@ address {
   .login .box {
     justify-content: space-evenly;
     padding: 0;
+    padding-top: 25px;
   }
 
   .login_txt {
@@ -314,14 +362,18 @@ address {
 }
 
 @media(max-width: 731px) {
-  .login_txt {
+  .login dl {
     border-right: 0;
+  }
+
+  .login_txt {
+
     padding: 20px 0;
     font-size: 3.0rem;
     line-height: 1;
   }
 
-  .login_txt span {
+  dd.login_txt {
     font-size: 2.0rem;
 
   }
@@ -344,7 +396,6 @@ address {
     width: 60px;
     height: 60px;
     font-size: 1.6rem;
-    letter-spacing: 0;
     margin-top: 20px;
   }
 }

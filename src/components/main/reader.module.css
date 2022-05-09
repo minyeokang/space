@@ -1,14 +1,14 @@
 .reader {
     width: 100%;
-    padding: 100px 0;
+    padding: 80px 0;
     background: #EAE6E5;
     border-top: 1px solid #9F9F9F;
 }
 
 .reader p {
-    letter-spacing: 3px;
     font-size: 3.0rem;
     color: #333;
+    font-weight: normal;
 }
 
 .headertop {
@@ -27,17 +27,20 @@
     padding: 10px 100px 10px 20px;
     background: transparent;
     font-size: 2.5rem;
+    font-family: 'DM Serif Text', serif;
+    font-weight: normal;
 }
 
 
 .headertop button {
-    font-family: 'DM Serif Display';
-    padding: 12px 30px;
+    font-family: 'DM Serif Text', serif;
+    padding: 10px 30px;
     font-size: 2.5rem;
     border: 0;
     color: #fff;
     background: rgba(245, 121, 0, 0.62);
-    letter-spacing: 2px;
+    font-weight: normal;
+    vertical-align: bottom;
 }
 
 @media(max-width: 1820px) {

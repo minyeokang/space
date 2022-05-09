@@ -1,0 +1,50 @@
+.news ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 100px;
+}
+
+.news li {
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.news li div img {
+    width: 100%;
+}
+
+.news li div {
+    position: relative;
+}
+
+.news li div button {
+    position: absolute;
+    right: 35px;
+    top: 0;
+    background: url('../../public/img/icon/icon_bookmark.png') no-repeat;
+    color: #fff;
+    border: 0;
+    width: 30px;
+    height: 50px;
+    font-size: 2.5rem;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+.news li div button.selected {
+    color: #F57900;
+}
+
+.news dl {
+    padding: 30px 30px 0;
+    font-size: 2.2rem;
+    font-family: 'Noto Serif KR';
+}
+
+.news p {
+    color: #F57900;
+    font-size: 2.0rem;
+    text-align: right;
+    padding: 30px;
+}

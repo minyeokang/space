@@ -4,11 +4,11 @@ function Footer() {
             <div className="inner">
 
                 <div>
-                    <h1>SPACE</h1>
+                    <h3>SPACE</h3>
                     <ul className='sns'>
-                        <li><img src="img/icon_facebook.png" alt="sns" /></li>
-                        <li><img src="img/icon_mail.png" alt="sns" /></li>
-                        <li><img src="img/icon_chat.png" alt="sns" /></li>
+                        <li><img src="img/icon/icon_facebook.png" alt="sns" /></li>
+                        <li><img src="img/icon/icon_mail.png" alt="sns" /></li>
+                        <li><img src="img/icon/icon_chat.png" alt="sns" /></li>
                     </ul>
                 </div>
                 <div className='changefont'>
