@@ -15,18 +15,20 @@ function Store(props) {
                         <dd>사라진 건물과 삭제된 시간의 재구성</dd>
                     </dl>
                     <table>
-                        <tr>
-                            <th>Frame</th>
-                            <td>사라진 근대건축</td>
-                        </tr>
-                        <tr>
-                            <th>Publisher</th>
-                            <td>CNB 미디어</td>
-                        </tr>
-                        <tr>
-                            <th>Price</th>
-                            <td>24,000원</td>
-                        </tr>
+                        <tbody>
+                            <tr>
+                                <th>Frame</th>
+                                <td>사라진 근대건축</td>
+                            </tr>
+                            <tr>
+                                <th>Publisher</th>
+                                <td>CNB 미디어</td>
+                            </tr>
+                            <tr>
+                                <th>Price</th>
+                                <td>24,000원</td>
+                            </tr>
+                        </tbody>
                     </table>
                     <div className='btn'>구매하기</div>
                     <div className='btn' onClick={() => {
@@ -39,7 +41,7 @@ function Store(props) {
                 {
                     props.books.map((a, i) => {
                         return (
-                            <div>
+                            <div key={i}>
                                 <img src={a.img} alt="book" />
                                 <p>{a.title} <span>{a.price}</span></p>
 

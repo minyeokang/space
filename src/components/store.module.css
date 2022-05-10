@@ -1,6 +1,5 @@
 .store {
 
-    max-width: calc(100% - 33.333%);
     margin: 0 auto;
 }
 
@@ -58,16 +57,18 @@ h1 {
     padding: 10px 0;
 }
 
-
-
 .bookflex {
+    max-width: calc(100% - 26.041%);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    margin: 0 auto;
     flex-wrap: wrap;
+    cursor: pointer;
 }
 
 .bookflex div {
-    margin: 50px 0;
+    margin: 50px 30px;
+
 }
 
 .bookflex img {
@@ -85,4 +86,37 @@ h1 {
     font-size: 2.2rem;
     color: #555555;
     font-family: 'Noto Serif KR';
+}
+
+@media(max-width: 1700px) {
+    .bookflex {
+        max-width: calc(100% - 10.416%);
+    }
+}
+
+@media(max-width: 1400px) {
+    .bookflex {
+        max-width: calc(100% - 5.208%);
+    }
+}
+
+@media(max-width: 1200px) {
+    .txt {
+        margin-right: 10%;
+    }
+}
+
+@media(max-width: 890px) {
+    .flex {
+        flex-direction: column;
+    }
+
+    .txt {
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+
+    .bookflex {
+        margin-top: 50px;
+    }
 }

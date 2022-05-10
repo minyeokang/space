@@ -111,4 +111,9 @@
         font-size: 1.5rem;
         padding-bottom: 10px;
     }
+
+    .mainslide .slide_txt div.more {
+        border-bottom: 1px solid #fff;
+        font-size: 1.6rem;
+    }
 }

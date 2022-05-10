@@ -41,6 +41,7 @@
     background: rgba(245, 121, 0, 0.62);
     font-weight: normal;
     vertical-align: bottom;
+    cursor: pointer;
 }
 
 @media(max-width: 1820px) {
@@ -67,11 +68,11 @@
     }
 
     .reader {
-        padding: 50px 0;
+        padding: 30px 0;
     }
 
     .reader p {
-        padding-bottom: 50px;
+        padding-bottom: 30px;
     }
 }
 

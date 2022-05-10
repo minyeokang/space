@@ -1,25 +1,32 @@
 import styles from './news.module.css'
 
-function News() {
+function News(props) {
     return (
         <div className={styles.news}>
             <h1>WEEKLY NEWS</h1>
-            <ul>
-                <li>
-                    <div>
-                        <img src="img/ariticle_1.png" alt="이미지1" />
-                        <button className={styles.selected}>★</button>
-                    </div>
-                    <dl>
-                        <dt>	&#91; 인터뷰 &#93; 집의 근본, 집의 변주
+            <div className={styles.newsflex}>
+                {
+                    props.news.map((a, i) => {
+                        return (
+                            <div key={i}>
+                                <img src={a.img} alt="news" />
+                                <div>
+                                    <h2>{a.h2}</h2>
+                                </div>
+                                <h3>{a.title}</h3>
+                                <p className={styles.name}>{a.name}</p>
+                                <p className={styles.padding}>padding</p>
+                                <button onClick={() => {
+                                    props.setNums(props.nums + i);
+                                    props.setNewsClicked(0);
+                                    alert('북마크 되었습니다')
+                                }} >★</button>
+                            </div>
+                        )
+                    })
+                }
 
-                        </dt>
-                        <dd>건축 입문자들의 가이드 </dd>
-
-                    </dl>
-                    <p>VIEW</p>
-                </li>
-            </ul>
+            </div>
         </div>
     );
 

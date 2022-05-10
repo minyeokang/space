@@ -7,7 +7,7 @@
 .flex {
     display: flex;
     justify-content: center;
-    align-self: center;
+    align-items: center;
 }
 
 .flex dl {
@@ -21,12 +21,22 @@
     color: #fff;
     padding: 10px 35px;
     margin-top: 25px;
+    border: 1px solid #8CAB8A;
+    cursor: pointer;
+    transition: all 0.5s;
 }
+
+.flex dd:hover {
+    background: #fff;
+    color: #8CAB8A;
+    border: 1px solid #8CAB8A;
+}
+
 
 .flex div {
     font-family: 'Noto Serif KR', serif;
-    margin-left: 200px;
     border: 1px solid #EAE6E5;
+    margin-left: 200px;
     padding: 50px;
     border-radius: 100px 0 0 0;
 }
@@ -50,11 +60,13 @@
     font-size: 2.0rem;
 }
 
+
 .checkout {
     display: flex;
-    justify-content: space-around;
-    max-width: calc(100% - 33.33%);
+    justify-content: space-evenly;
+    max-width: calc(100% - 20%);
     margin: 0 auto;
+    flex-wrap: wrap;
 }
 
 .checkout h1 {
@@ -67,10 +79,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.devide img {
-    width: 300px;
 }
 
 .devide dl {
@@ -89,4 +97,101 @@
 .devide span {
     font-family: 'Noto Serif KR', serif;
     float: right;
+}
+
+.fav>div {
+    position: relative;
+}
+
+.fav img {
+    width: 300px;
+}
+
+.fav h3 {
+    font-size: 1.8rem;
+    font-family: 'noto serif kr';
+    font-weight: normal;
+    white-space: pre-line;
+}
+
+
+@media(max-width: 1300px) {
+    .checkout dl {
+        margin-right: 100px;
+    }
+}
+
+
+@media(max-width: 1200px) {
+    .flex {
+        max-width: calc(100% - 5.208%);
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
+    .flex dl {
+        padding-left: 150px;
+    }
+
+    .flex div {
+        margin-left: 0;
+    }
+
+    .flex dd {
+        padding: 10px 25px;
+        font-size: 1.3rem;
+    }
+
+
+}
+
+@media(max-width: 998px) {
+    .flex dl {
+        padding-left: 0;
+
+    }
+
+    .checkout dl {
+        margin-right: 0;
+    }
+}
+
+@media(max-width: 840px) {
+    .flex {
+        flex-direction: column;
+    }
+
+    .flex div {
+        border: 0;
+        text-align: center;
+    }
+
+    .flex dd {
+        padding: 10px 35px;
+        font-size: 1.6rem;
+    }
+}
+
+@media(max-width: 772px) {
+    .devide {
+        flex-direction: column;
+    }
+
+    .checkout {
+        flex-direction: column;
+    }
+
+    .devide dl {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .devide span {
+        float: none;
+        padding-left: 10px;
+    }
+
+    .checkout h1 {
+        text-align: center;
+    }
 }

@@ -1,24 +1,56 @@
-.news ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 100px;
+.news {
+    max-width: calc(100% - 33.33%);
+    margin: 0 auto;
+    padding-bottom: 100px;
 }
 
-.news li {
-    border: 1px solid #ddd;
+.news h2 {
+    font-size: 2.0rem;
+    color: #1D8813;
+    font-weight: normal;
+    border-bottom: 1px solid #000;
+    display: inline-block;
+    padding: 30px 0 15px;
+    font-family: 'dm serif text';
+}
+
+.news h3 {
+    white-space: pre-line;
+    padding: 15px 0;
+    font-size: 2.2rem;
+    font-weight: normal;
+}
+
+.news .name {
+    font-size: 1.8rem;
+
+}
+
+.news .padding {
+    font-size: 0;
+    display: none;
+}
+
+.newsflex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
     cursor: pointer;
 }
 
-.news li div img {
-    width: 100%;
-}
-
-.news li div {
+.newsflex div {
     position: relative;
+    font-family: 'Noto Serif KR';
+
 }
 
-.news li div button {
+.newsflex div:nth-of-type(2) {
+    transform: translateY(-130px);
+}
+
+
+.newsflex div button {
     position: absolute;
     right: 35px;
     top: 0;
@@ -32,19 +64,58 @@
     cursor: pointer;
 }
 
-.news li div button.selected {
+.newsflex div button:focus {
     color: #F57900;
+
 }
 
-.news dl {
-    padding: 30px 30px 0;
-    font-size: 2.2rem;
-    font-family: 'Noto Serif KR';
+
+@media(max-width: 1750px) {
+    .news {
+        max-width: calc(100% - 26.041%);
+    }
 }
 
-.news p {
-    color: #F57900;
-    font-size: 2.0rem;
-    text-align: right;
-    padding: 30px;
+@media(max-width: 1550px) {
+    .news {
+        max-width: calc(100% - 15.625%);
+    }
+}
+
+@media(max-width: 1350px) {
+    .news {
+        max-width: calc(100% - 5.208%);
+    }
+}
+
+@media(max-width: 1200px) {
+    .newsflex {
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .newsflex>div {
+        margin: 0 30px;
+    }
+
+    .newsflex div img {
+        width: 100%;
+    }
+
+    .newsflex div:nth-of-type(2) {
+        transform: translateY(0);
+    }
+
+    .news .padding {
+        display: block;
+        padding-bottom: 30px;
+    }
+
+}
+
+@media(max-width: 768px) {
+    .newsflex {
+        flex-direction: column;
+        align-items: center;
+    }
 }
