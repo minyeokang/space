@@ -18,7 +18,7 @@ function News(props) {
                                 <p className={styles.padding}>padding</p>
                                 <button onClick={() => {
                                     props.setNums(props.nums + i);
-                                    props.setNewsClicked(0);
+                                    props.setNewsClicked(true);
                                     alert('북마크 되었습니다')
                                 }} >★</button>
                             </div>
