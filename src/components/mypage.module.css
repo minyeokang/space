@@ -192,4 +192,11 @@
     .checkout h1 {
         text-align: center;
     }
+
+}
+
+@media(max-width: 620px) {
+    .flex div span {
+        padding-right: 0;
+    }
 }

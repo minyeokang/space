@@ -122,19 +122,6 @@ h1 {
 }
 
 @media(max-width: 500px) {
-
-    .btn:nth-of-type(1) {
-        margin-right: 0;
-    }
-
-    .btn:nth-of-type(2) {
-        margin-top: 15px;
-    }
-
-    .btn {
-        display: block;
-    }
-
     .table {
         max-width: calc(100% - 30px);
     }

@@ -126,7 +126,7 @@
     }
 
     .mainslide .slide_txt h2 {
-        font-size: 1.5rem;
+        display: none;
     }
 
     .mainslide .slide_txt dl {
@@ -136,5 +136,9 @@
 
     .mainslide .slide_txt div.more {
         font-size: 1.3rem;
+    }
+
+    .mainslide .slide_txt p {
+        padding-bottom: 0;
     }
 }
