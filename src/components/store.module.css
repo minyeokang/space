@@ -125,4 +125,8 @@ h1 {
     .table {
         max-width: calc(100% - 30px);
     }
+
+    .txt p {
+        font-size: 3.0rem;
+    }
 }

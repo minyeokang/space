@@ -202,4 +202,9 @@
     .more {
         border-bottom: none;
     }
+
+    .newbook img:hover,
+    .oldbook img:hover {
+        transform: scale(0);
+    }
 }

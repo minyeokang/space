@@ -198,6 +198,7 @@
 @media(max-width: 620px) {
     .flex div span {
         padding-right: 0;
-        display: inline-block;
+        display: block;
+
     }
 }
