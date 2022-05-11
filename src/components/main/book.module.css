@@ -205,6 +205,6 @@
 
     .newbook img:hover,
     .oldbook img:hover {
-        transform: scale(0);
+        transform: scale(1);
     }
 }
