@@ -120,4 +120,8 @@
     .article ul li dl {
         font-size: 1.8rem;
     }
+
+    .article {
+        padding: 100px 0 0;
+    }
 }

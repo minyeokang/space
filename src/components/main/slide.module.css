@@ -73,6 +73,7 @@
         top: 50%;
         color: #fff;
         transform: translateY(-50%);
+        text-align: right;
     }
 
     .mainslide .slide_txt div.more {
@@ -115,5 +116,25 @@
     .mainslide .slide_txt div.more {
         border-bottom: 1px solid #fff;
         font-size: 1.6rem;
+    }
+}
+
+@media(max-width: 500px) {
+
+    .mainslide {
+        margin: 50px auto;
+    }
+
+    .mainslide .slide_txt h2 {
+        font-size: 1.5rem;
+    }
+
+    .mainslide .slide_txt dl {
+        font-size: 1.3rem;
+        padding-bottom: 5px;
+    }
+
+    .mainslide .slide_txt div.more {
+        font-size: 1.3rem;
     }
 }

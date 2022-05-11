@@ -1,6 +1,4 @@
 .mypage {
-    width: 100%;
-    height: 100%;
     padding: 200px 0 100px;
 }
 
@@ -50,6 +48,7 @@
 .flex div p {
     color: #494949;
     font-size: 2.0rem;
+    word-break: keep-all;
 }
 
 .flex div span {
@@ -64,7 +63,6 @@
 .checkout {
     display: flex;
     justify-content: space-evenly;
-    max-width: calc(100% - 20%);
     margin: 0 auto;
     flex-wrap: wrap;
 }

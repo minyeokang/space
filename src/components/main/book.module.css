@@ -195,4 +195,9 @@
     .oldbook div {
         font-size: 2.0rem;
     }
+
+    .book {
+        padding: 100px 0 0;
+
+    }
 }

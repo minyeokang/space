@@ -372,6 +372,10 @@ address {
 }
 
 @media(max-width: 786px) {
+  footer h3 {
+    text-align: center;
+  }
+
   footer .inner {
     flex-direction: column;
   }
@@ -418,6 +422,27 @@ address {
     height: 60px;
     font-size: 1.6rem;
     margin-top: 20px;
+    margin-right: 10px;
+  }
+
+  .login_ico {
+    right: 30px;
+  }
+
+  footer .changefont {
+    font-size: 1.3rem;
+    font-weight: 300;
+  }
+
+}
+
+@media(max-width: 526px) {
+  .login dl {
+    display: none;
+  }
+
+  .login .box {
+    justify-content: center;
   }
 
 }

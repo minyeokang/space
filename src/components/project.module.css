@@ -114,6 +114,7 @@ div .qna:nth-child(2) .img {
 
 .qna p.bt {
     padding-bottom: 50px;
+    word-break: keep-all;
 }
 
 .an {
@@ -162,7 +163,7 @@ div .qna:nth-child(2) .img {
         font-size: 1.5rem;
     }
 
-    .qna p br {
+    .qna p.an br {
         display: none;
     }
 }
@@ -244,4 +245,10 @@ div .qna:nth-child(2) .img {
     }
 
 
+}
+
+@media(max-width: 500px) {
+    .mainslide .slide_txt h2 {
+        display: none;
+    }
 }
