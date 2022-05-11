@@ -128,5 +128,6 @@ h1 {
 
     .txt p {
         font-size: 3.0rem;
+        text-align: center;
     }
 }
